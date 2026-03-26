@@ -1,0 +1,39 @@
+package com.filehandling;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileHandling {
+	public static void main(String[] args) {
+//		createNewFile();
+		
+		File file = new File("C:/Users/srika/OneDrive/Desktop/JavaLearning/Files/a.txt");
+		FileInputStream fis = null;
+		
+		try {
+			fis = new FileInputStream(file);
+			System.out.println(fis.read());
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+		catch(IOException e) {
+			System.out.println(e);
+		}
+	}
+
+//	private static void createNewFile() {
+//		File file = new File("C:/Users/srika/OneDrive/Desktop/JavaLearning/Files/a.txt");
+//		try {
+//			file.createNewFile();
+//		}
+//		catch(FileNotFoundException e) {
+//			System.out.println(e);
+//		}
+//		catch(IOException e) {
+//			System.out.println(e);
+//		}
+//	}
+}

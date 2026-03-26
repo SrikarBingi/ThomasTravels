@@ -1,0 +1,15 @@
+# Eclipse
+.metadata/
+bin/
+.settings/
+
+# Compiled files
+*.class
+
+# Eclipse project files (optional)
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
